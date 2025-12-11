@@ -2,6 +2,12 @@
   "hosting": {
     "public": "dist/angular-ngrx-material-starter",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "predeploy": ["npm run build:prod"]
+    "predeploy": ["npm run build:prod"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
   }
 }
