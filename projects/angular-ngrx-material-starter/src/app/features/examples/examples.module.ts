@@ -31,11 +31,7 @@ import { UserService } from './simple-state-management/user.service';
 import { ElementsComponent } from './elements/elements.component';
 
 export function httpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(
-    http,
-    `${environment.i18nPrefix}/assets/i18n/examples/`,
-    '.json'
-  );
+  return new TranslateHttpLoader(http, `/assets/i18n/examples/`, '.json');
 }
 
 @NgModule({
