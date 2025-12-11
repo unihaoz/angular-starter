@@ -13,7 +13,7 @@
       },
       "root": "projects/angular-ngrx-material-starter",
       "sourceRoot": "projects/angular-ngrx-material-starter/src",
-      "prefix": "anms",
+      "prefix": "uh",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -81,6 +81,10 @@
                   "maximumWarning": "2kb",
                   "maximumError": "4kb"
                 }
+              ],
+              "styles": [
+                "projects/angular-ngrx-material-starter/src/styles-app-loading.scss",
+                "projects/angular-ngrx-material-starter/src/styles.scss"
               ]
             }
           }
