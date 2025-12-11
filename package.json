@@ -7,7 +7,7 @@
     "start": "node --openssl-legacy-provider ./node_modules/@angular/cli/bin/ng serve --open",
     "start:prod": "npm run build:prod && npm run server",
     "build": "ng build",
-    "build:prod": "ng build --configuration production",
+    "build:prod": "node --openssl-legacy-provider ./node_modules/@angular/cli/bin/ng build --configuration production",
     "lint": "eslint --color -c .eslintrc --ext .ts .",
     "test": "npm run lint && ng test --configuration=test",
     "watch": "ng test --configuration=test --browsers ChromeHeadless --watch --reporters dots",
