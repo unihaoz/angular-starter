@@ -29,6 +29,7 @@ import { ExamplesEffects } from './examples.effects';
 import { UserComponent } from './simple-state-management/components/user.component';
 import { UserService } from './simple-state-management/user.service';
 import { ElementsComponent } from './elements/elements.component';
+import { LoginComponent } from '../login/login.component';
 
 export function httpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, `/assets/i18n/examples/`, '.json');
@@ -68,7 +69,8 @@ export function httpLoaderFactory(http: HttpClient) {
     FormComponent,
     NotificationsComponent,
     UserComponent,
-    ElementsComponent
+    ElementsComponent,
+    LoginComponent
   ],
   providers: [StockMarketService, UserService]
 })

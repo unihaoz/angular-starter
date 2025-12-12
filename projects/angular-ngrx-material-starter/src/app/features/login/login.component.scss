@@ -1,0 +1,32 @@
+@import '../../../styles-variables.scss';
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+
+  mat-card {
+    width: 100%;
+
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+      max-width: 400px;
+    }
+  }
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-100 {
+  width: 100%;
+}

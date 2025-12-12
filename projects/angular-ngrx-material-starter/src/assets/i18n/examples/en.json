@@ -42,6 +42,7 @@
   "uh.examples.form.text6": "Clap",
   "uh.examples.form.title": "Reactive form using a form builder",
   "uh.examples.menu.auth": "Auth",
+  "uh.examples.menu.login": "Login",
   "uh.examples.menu.crud": "CRUD",
   "uh.examples.menu.form": "Form",
   "uh.examples.menu.notifications": "Notifications",

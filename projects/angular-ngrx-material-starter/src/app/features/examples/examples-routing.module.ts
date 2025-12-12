@@ -13,6 +13,7 @@ import { FormComponent } from './form/components/form.component';
 import { NotificationsComponent } from './notifications/components/notifications.component';
 import { UserComponent } from './simple-state-management/components/user.component';
 import { ElementsComponent } from './elements/elements.component';
+import { LoginComponent } from '../login/login.component';
 
 const routes: Routes = [
   {
@@ -74,6 +75,11 @@ const routes: Routes = [
         component: AuthenticatedComponent,
         canActivate: [AuthGuardService],
         data: { title: 'uh.examples.menu.auth' }
+      },
+      {
+        path: 'login',
+        component: LoginComponent,
+        data: { title: 'uh.examples.menu.login' }
       }
     ]
   }

@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatSelectChange } from '@angular/material/select';
 import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
+import { Router } from '@angular/router';
 
 import { environment as env } from '../../environments/environment';
 
@@ -52,7 +53,8 @@ export class AppComponent implements OnInit {
 
   constructor(
     private store: Store<AppState>,
-    private storageService: LocalStorageService
+    private storageService: LocalStorageService,
+    private router: Router
   ) {}
 
   private static isIEorEdgeOrSafari() {
