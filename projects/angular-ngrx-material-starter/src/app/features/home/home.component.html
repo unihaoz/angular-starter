@@ -1,1 +1,19 @@
-<p>home works!</p>
+<div class="background">
+  <div class="gradient">
+    <div class="container">
+      <h1 class="main-heading" [ngClass]="routeAnimationsElements">Find your perfect Uni Hao</h1>
+      <p class="sub-heading" [ngClass]="routeAnimationsElements">Search from thousands of rooms and book online</p>
+
+      <div class="search-container" [ngClass]="routeAnimationsElements">
+        <form class="search-form">
+          <mat-form-field appearance="outline" class="search-input">
+            <mat-label>Search by city, university, or property</mat-label>
+            <input matInput placeholder="eg: London, UCL, or iQ Shoreditch">
+            <fa-icon matSuffix [icon]="['fas', 'search']"></fa-icon>
+          </mat-form-field>
+          <button mat-raised-button color="primary" class="search-button">Find my home</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
