@@ -80,6 +80,7 @@ export class AppComponent implements OnInit {
 
   onLoginClick() {
     this.router.navigate(['/examples/login']);
+    //this.store.dispatch(authLogin());
   }
 
   onLogoutClick() {
