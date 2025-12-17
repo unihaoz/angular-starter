@@ -19,6 +19,7 @@ yarn.lock
 .settings/
 *.sublime-workspace
 .firebase
+.idx/integrations.json
 
 # IDE - VSCode
 .vscode/*
